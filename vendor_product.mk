@@ -7,7 +7,7 @@ ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
   PRODUCT_PACKAGES += init.qti.usb.debug.rc
 endif
 
-ifneq ($(TARGET_KERNEL_VERSION),$(filter $(TARGET_KERNEL_VERSION),4.9 4.14))
+ifneq ($(TARGET_KERNEL_VERSION),$(filter $(TARGET_KERNEL_VERSION),3.18 4.4 4.9 4.14))
   PRODUCT_PACKAGES += android.hardware.usb@1.2-service-qti
 endif
 
